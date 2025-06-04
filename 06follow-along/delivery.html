@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="description" content="Get your next meal delivered by drone."/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="delivery.css">
+    
+    <meta charset="UTF-8">
+    <title>Drone Delivery Services LLC.</title>
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Drone Delivery </span>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li class="active"><a href="delivery.html">Request a Delivery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Request Delivery</h1>
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset><legend>customer info</legend>
+            <label>first name*</label><input type="text" name="fname" required placeholder="marvin">
+            <label>last name*</label><input type="text" name="lname" required placeholder="meyer">
+            <label>phone number*</label><input type="tel" name="phone" required placeholder='123-456-7890'>
+            </fieldset>
+            <fieldset>
+                <legend>delivery method</legend>
+                <label><input type="radio" name="method" value="drone">drone</label>
+                <label><input type="radio" name="method" value="pigeon">carrier pigeon</label>
+                <label><input type="radio" name="method" value="teleport">teleportation</label>
+            </fieldset>
+            <fieldset>
+                <legend>delivery options</legend>
+                <label><input type="checkbox" name="mail slot" value="chosen">mail slot</label>
+                <label><input type="checkbox" name="chimney" value="chosen">chimney</label>
+                <label><input type="checkbox" name="surprise" value="chosen">surprise me</label>
+                <select name="time">
+                    <option value="none">select a time of day</option>
+                    <option value="morning">morning</option>
+                    <option value="afternoon">afternoon</option>
+                    <option value="night">night</option>
+                </select>
+            </fieldset>
+            <label>comments
+                <textarea name="comments">special instructions here</textarea>
+            </label>
+            
+            <input type="submit" value="send delivery request">
+        </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;202X &bull; Drone Delivery Services &bull; <a href="mailto:zen@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+</html>
