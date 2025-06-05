@@ -179,7 +179,7 @@ div.gallery figcaption{
     width: 300px;
 }
 
-.myPoll :required{
+.myPoll :required .myPoll [type=email]{
     background-color: #fff;
     color:#000;
 }
