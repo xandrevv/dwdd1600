@@ -162,7 +162,7 @@ div.gallery figcaption{
 .myPoll label{
     margin: .5rem;
 }
-.myPoll label, .myPoll select, .myPoll [type=text], .myPoll [type=tel], .myPoll textarea{
+.myPoll label, .myPoll select, .myPoll [type=text], .myPoll [type=tel], .myPoll textarea .myPoll [type=email]{
     display: block;
 }
 
@@ -179,7 +179,7 @@ div.gallery figcaption{
     width: 300px;
 }
 
-.myPoll :required .myPoll [type=email]{
+.myPoll :required{
     background-color: #fff;
     color:#000;
 }
