@@ -162,11 +162,11 @@ div.gallery figcaption{
 .myPoll label{
     margin: .5rem;
 }
-.myPoll label, .myPoll select, .myPoll [type=text], .myPoll [type=tel], .myPoll textarea .myPoll [type=email]{
+.myPoll label, .myPoll select, .myPoll [type=text], .myPoll [type=tel], .myPoll textarea, .myPoll [type=email]{
     display: block;
 }
 
-.myPoll [type=text], .myPoll [type=tel], .myPoll select, .myPoll textarea .myPoll [type=email]{
+.myPoll [type=text], .myPoll [type=tel], .myPoll select, .myPoll textarea, .myPoll [type=email]{
     border: solid 1px #6f8d51;
     padding: .3rem;
     width: 300px;
