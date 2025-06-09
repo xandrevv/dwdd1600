@@ -166,7 +166,7 @@ div.gallery figcaption{
     display: block;
 }
 
-.myPoll [type=text], .myPoll [type=tel], .myPoll select, .myPoll textarea{
+.myPoll [type=text], .myPoll [type=tel], .myPoll select, .myPoll textarea .myPoll [type=email]{
     border: solid 1px #6f8d51;
     padding: .3rem;
     width: 300px;
