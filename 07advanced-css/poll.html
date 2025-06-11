@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="andrew">
+    <meta name="description" content="keaton hall's homepage">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Keaton Hall</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo.png" alt="logo" width="100" height="56" class="logo">
+        <div class="site-text">
+            <header><span>KeatonHall.com</span></header>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="it.html">Information Technology</a></li>
+            <li><a href="memes.html">Memes</a></li>
+            <li class="active"><a href="poll.html">Poll</a></li>
+        </ul>
+    </nav>
+    <!--main page information-->
+    <main>
+        <h1>Poll</h1><br>
+        <p>Help me learn about user preferences!<br>Anything marked with * is required.</p><br>
+                <form method="get" class="myPoll" action="thanks.html">
+            <fieldset><legend>about you</legend>
+            <label>* name: <input type="text" name="fname" required placeholder="keaton hall"></label>
+            <label>* phone number: <input type="tel" name="phone" required placeholder='123-456-7890'></label>
+            <label>* email: <input type="email" name="email" required placeholder='keaton@keatonhall.com'></label>
+            </fieldset>
+            <fieldset>
+                <legend>primary operating system</legend>
+                <label><input type="radio" name="method" value="windows">windows</label>
+                <label><input type="radio" name="method" value="macos">mac os</label>
+                <label><input type="radio" name="method" value="linux">linux</label>
+                <label><input type="radio" name="method" value="other">other</label>
+            </fieldset>
+            <fieldset>
+                <legend>kinds of devices</legend>
+                <label><input type="checkbox" name="mobile" value="chosen">mobile device</label>
+                <label><input type="checkbox" name="laptop" value="chosen">laptop</label>
+                <label><input type="checkbox" name="desktop" value="chosen">desktop</label>
+                <select name="other">
+                    <option value="none">other devices</option>
+                    <option value="fridge">samsung smart fridge</option>
+                    <option value="ps5">sony ps5</option>
+                    <option value="2025 toyota land cruiser">2025 toyota land cruiser</option>
+                </select>
+            </fieldset>
+            <label>anything else?
+                <textarea name="comments">include more about what you like here, software, hardware, etc.</textarea>
+            </label>
+            
+            <input type="submit" value="submit poll">
+        </form>
+        
+    </main><br>
+    <footer><p>&copy; 2025 &bull; keatonhall.com</p></footer>
+</body>
+</html>
