@@ -1,0 +1,293 @@
+/* browser support */
+* {box-sizing: border-box;}
+
+header, .header, nav, main, footer {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+}
+
+/* header */
+header{
+    background-color: #f2f4ff;
+    padding: 1rem;
+}
+
+header span {
+    color: #6c756b;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 56px;
+    margin-left: 1rem;
+}
+
+/* footer */
+footer{
+    clear:both;
+}
+
+/* small navbar */
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0.8rem;
+        margin: 0.5rem 1rem;
+        color: #f2f4ff;
+        background-color: #96c5f7;
+        text-decoration: none;
+        border-bottom: solid 1px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 8px;
+    }
+    a:hover{
+        color: #666;
+        font-weight: 500;
+        background-image: linear-gradient(to bottom, #a9d3ff, #96c5f7);
+    }
+    nav .active a{
+        background-color: #a9d3ff;
+        color: #666
+    }
+}
+
+/* big navbar */
+@media only screen and (min-width: 800px){
+nav {
+    background-color: #96c5f7;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0 10px;
+    display: flex;
+}
+
+nav a {
+    padding: .83rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #f2f4ff;
+}
+
+nav li.active a{
+    background-color: #a9d3ff;
+    color: #666
+}
+
+nav li a:hover{
+    color: #666;
+    font-weight: 500;
+}
+}
+
+/* body */
+main{
+    padding: 1rem 10px;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: #f2f4ff;
+    color: #6c756b;
+}
+
+body h1 {
+    color: #96c5f7;
+    margin-bottom: -1rem;
+}
+
+body h2{
+    color: #a9d3ff;
+    margin-bottom: -.1rem;
+}
+
+body p {
+    margin: 0;
+    color: #333;
+    padding-left: 1rem;
+}
+
+main ul{
+    list-style-type:upper-roman;
+}
+
+main ol{
+    border: 1px solid #96c5f7;
+    border-radius: 5px;
+    width:fit-content;
+    padding: .5rem 30px;
+    margin-left: 1rem;
+}
+
+div.package{
+    border: 1px solid #96c5f7;
+    border-radius: 10px;
+    width: fit-content;
+    padding: .5rem 10px;
+    margin-left: 1rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+main dl{
+    margin-top: -.15rem;
+    padding-left: 1rem;
+}
+
+main dl dt{
+    font-weight:700;
+}
+
+main dl dd{
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main address{
+    padding-left: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: 250;
+}
+
+main a{
+    color:#6c756b;
+}
+
+/* image css */
+figure.wrapped {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.package {
+    margin: 0 0 0 10px;
+    float: right;
+    margin-left: 1rem;
+}
+
+figure.wrapped img{
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* gallery */
+div.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+div.gallery figure{
+    margin: 0;
+}
+
+div.gallery figcaption{
+    text-align: center;
+    font-size: .8rem;
+    color: #6c756b;
+}
+
+div.gallery img{
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+/* contact */
+.contact fieldset{
+    border: 1px solid #96c5f7;
+    border-radius: 5px;
+}
+.contact legend{
+    color:#6c756b;
+    font-size: 1.5rem;
+}
+.contact label{
+    margin: .5rem;
+}
+.contact label, .contact select, .contact [type=text], .contact [type=tel], .contact textarea, .contact [type=email]{
+    display: block;
+}
+
+.contact [type=text], .contact [type=tel], .contact select, .contact textarea, .contact [type=email]{
+    border: solid 1px #a9d3ff;
+    padding: .3rem;
+    width: 300px;
+    border-radius: .3rem;
+    font-family: "Jost", sans-serif;
+}
+
+.contact textarea{
+    height: 10rem;
+    width: 300px;
+}
+
+.contact :required{
+    background-color: #fff;
+    color:#000;
+}
+
+.contact [type=submit]{
+    background-color:#96c5f7;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color:white;
+    margin: 1rem 0 0 .5rem;
+}
+
+select.other{
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+/* table */
+table.server{
+    width: 100%;
+    border-collapse: collapse;
+}
+table.server th{
+    background-color: #a9d3ff;
+    color:white;
+    padding: .6rem 2%;
+    text-align: left;
+}
+table.server td{
+    color:#a9d3ff;
+    padding: .4rem 2%;
+
+}
+table.server tr:nth-child(odd){
+    background-color:#eee;
+}
+table.server tr:hover{
+    background-color: #ddd;
+}

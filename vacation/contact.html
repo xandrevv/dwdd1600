@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="andrew">
+    <meta name="description" content="Budget Vacations">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Budget Vacations</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <div class="site-text">
+            <header><span>Budget Vacations</span></header>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="video.html">Promo Video</a></li>
+            <li><a href="packages.html">Vacation Packages</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!--main page-->
+    <main>
+        <h1>Contact Us</h1><br>
+        <p>Want to get in contact or schedule your next vacation? Just fill out the form and we'll get back to you as soon as possible.<br>* is required.</p><br>
+        <form method="get" class="contact" action="thankyou.html">
+            <fieldset><legend>Your Information</legend>
+            <label>* name: <input type="text" name="fname" required placeholder="Leigh Keightley"></label>
+            <label>* phone number: <input type="tel" name="phone" required placeholder='123-456-7890'></label>
+            <label>* email: <input type="email" name="email" required placeholder='leigh@budgetvacations.com'></label>
+             <select name="other" class="other">
+                <option value="none">Why are you contacting us?</option>
+                <option value="question">General Question</option>
+                <option value="vacation">Book a Vacation</option>
+                <option value="other">Other</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <legend>What destination are you interested in?</legend>
+                <label><input type="radio" name="method" value="london">London</label>
+                <label><input type="radio" name="method" value="denver">Denver</label>
+                <label><input type="radio" name="method" value="miami">Miami</label>
+                <label><input type="radio" name="method" value="stockholm">Stockholm</label>
+                <label><input type="radio" name="method" value="chicago">Chicago</label>
+                <label><input type="radio" name="method" value="nyc">New York City</label>
+            </fieldset>
+            <label>Comments
+                <textarea name="comments">Is there anything else you want us to know? Include it here!</textarea>
+            </label>
+            
+            <input type="submit" value="Submit">
+        </form>
+        
+    </main><br>
+    <footer><p>&copy; 2025 &bull; Budget Vacations</p></footer>
+</body>
+</html>
